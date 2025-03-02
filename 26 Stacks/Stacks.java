@@ -42,7 +42,7 @@ public class Stacks {
         Stacks.push(4);
         Stacks.push(7);
         while (!Stacks.isempty()) {
-            System.out.println(Stacks.peek());
+            System.out.println(Stacks.peek()+ " is removed");
             Stacks.pop();
         }
     }
