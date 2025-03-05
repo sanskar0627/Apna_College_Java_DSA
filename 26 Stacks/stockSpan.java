@@ -20,7 +20,7 @@ public class stockSpan {
                 span[i] = i + 1; // If stack is empty, span = i + 1 (all previous prices were smaller)
             } else {
                 int prevHigh = s.peek(); // Previous higher price's index
-                span[i] = i - prevHigh;  // Span is difference between indices
+                span[i] = i - prevHigh; // Span is difference between indices
             }
 
             // **Step 3: Push current day's index to stack**
@@ -29,7 +29,7 @@ public class stockSpan {
     }
 
     public static void main(String[] args) {
-        int stocks[] = {100, 80, 60, 70, 60, 75, 85};
+        int stocks[] = { 100, 80, 60, 70, 60, 75, 85 };
         int span[] = new int[stocks.length];
         stockSpan(stocks, span);
 
