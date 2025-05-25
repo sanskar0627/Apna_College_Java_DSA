@@ -16,7 +16,7 @@ public class iteration {
         System.out.println(items);// printing keys only
 
         for (String i : items) {
-            System.out.println("The price of " + i + "  is " + hm.get(i));
+            System.out.println("The price of " + i + "  is " + hm.get(i)); //printing the key value here using the for each loop
         }
 
     }
